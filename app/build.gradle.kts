@@ -3,6 +3,7 @@ import org.jetbrains.kotlin.gradle.plugin.mpp.pm20.util.libsDirectory
 plugins {
     id("com.android.application")
     id("org.jetbrains.kotlin.android")
+    id("kotlin-parcelize")
 }
 
 android {
@@ -52,6 +53,8 @@ android {
 }
 
 dependencies {
+
+    implementation("androidx.navigation:navigation-compose:2.7.4")
 
     //compose ViewModel
     implementation("androidx.lifecycle:lifecycle-viewmodel-compose:2.6.2")
