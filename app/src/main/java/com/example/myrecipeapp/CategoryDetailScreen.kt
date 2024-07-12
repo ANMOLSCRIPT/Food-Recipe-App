@@ -31,7 +31,7 @@ fun CategoryDetailScreen(category: Category){
                 .aspectRatio(1f)
         )
 
-        Text(text = category.strCategoryCategoryDescription,
+        Text(text = category.strCategoryDescription,
             textAlign = TextAlign.Justify,
             modifier = Modifier.verticalScroll(rememberScrollState())
             )
